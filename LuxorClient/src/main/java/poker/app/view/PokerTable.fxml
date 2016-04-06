@@ -1,12 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import java.lang.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="poker.app.view.PokerTableController">
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="poker.app.view.PokerTableController">
    <children>
-      <AnchorPane layoutX="-7.0" layoutY="-9.0" prefHeight="667.0" prefWidth="772.0" />
+      <AnchorPane layoutX="-7.0" layoutY="-9.0" prefHeight="667.0" prefWidth="772.0">
+         <children>
+            <MenuBar layoutX="14.0" layoutY="14.0" prefHeight="27.0" prefWidth="750.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="Game Type">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="5 Card Joker Poker" />
+                        <MenuItem mnemonicParsing="false" text="5 Card Wild Poker" />
+                        <MenuItem mnemonicParsing="false" text="5 Card Draw" />
+                        <MenuItem mnemonicParsing="false" text="7 Card Draw" />
+                        <MenuItem mnemonicParsing="false" text="Texas Hold'em" />
+                        <MenuItem mnemonicParsing="false" text="Omaha" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <BorderPane layoutX="14.0" layoutY="46.0" prefHeight="613.0" prefWidth="750.0">
+               <top>
+                  <BorderPane prefHeight="150.0" prefWidth="750.0" BorderPane.alignment="CENTER">
+                     <bottom>
+                        <ButtonBar prefHeight="40.0" prefWidth="668.0" BorderPane.alignment="CENTER">
+                          <buttons>
+                              <Button mnemonicParsing="false" text="Leave" />
+                            <Button mnemonicParsing="false" text="Sit" />
+                          </buttons>
+                        </ButtonBar>
+                     </bottom>
+                  </BorderPane>
+               </top>
+               <left>
+                  <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <bottom>
+                        <ButtonBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                           <buttons>
+                              <Button mnemonicParsing="false" text="Sit" />
+                              <Button mnemonicParsing="false" text="Leave" />
+                           </buttons>
+                        </ButtonBar>
+                     </bottom>
+                  </BorderPane>
+               </left>
+               <center>
+                  <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+               </center>
+               <right>
+                  <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <bottom>
+                        <ButtonBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                           <buttons>
+                              <Button mnemonicParsing="false" text="Sit" />
+                              <Button mnemonicParsing="false" text="Leave" />
+                           </buttons>
+                        </ButtonBar>
+                     </bottom>
+                  </BorderPane>
+               </right>
+               <bottom>
+                  <BorderPane prefHeight="150.0" prefWidth="750.0" BorderPane.alignment="CENTER">
+                     <bottom>
+                        <ButtonBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                           <buttons>
+                              <Button mnemonicParsing="false" text="Sit" />
+                              <Button mnemonicParsing="false" text="Leave" />
+                           </buttons>
+                        </ButtonBar>
+                     </bottom>
+                  </BorderPane>
+               </bottom>
+            </BorderPane>
+         </children></AnchorPane>
    </children>
 </AnchorPane>
